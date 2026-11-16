@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Rishabh Negi, student and aspiring web developer, creator of IntellectDeck.">
+    <title>My Portfolio - Contact</title>
+    <link rel="icon" href="images/avatar.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <div class="wrap topbar-inner">
+            <a class="brand" href="index.html"><img src="images/avatar.jpg" width="40" height="40" alt="">Rishabh Negi</a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internships.html">Internships</a></li>
+                    <li><a href="Contacts.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        </div>
+    </header>
+
+    <div class="page-title">
+        <img class="title-art" src="images/jet.svg" alt="" width="200" height="220">
+        <div class="wrap">
+            <h1>Contact Me</h1>
+            <p>Student | Aspiring Web Developer</p>
+        </div>
+    </div>
+
+    <main id="main" class="wrap">
+        <section class="section">
+            <div class="section-grid">
+                <h2>Get in touch</h2>
+                <div>
+                    <p>
+                        I would be happy to hear from you. You can contact me
+                        using the information below.
+                    </p>
+                    <dl class="contact-list">
+                        <dt>Email</dt>
+                        <dd>
+                            <a href="mailto:raidlandtopic@gmail.com">raidlandtopic@gmail.com</a>
+                            <button class="copy-btn" id="copy-email" type="button">Copy</button>
+                        </dd>
+                        <dt>Phone</dt>
+                        <dd>+91 9319119005</dd>
+                        <dt>City</dt>
+                        <dd>Delhi, India</dd>
+                        <dt>GitHub</dt>
+                        <dd><a href="https://github.com/" target="_blank" rel="noopener">GitHub Profile</a></dd>
+                        <dt>LinkedIn</dt>
+                        <dd><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn Profile</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-grid">
+                <h2>Send me a message</h2>
+                <form id="contact-form" action="#" method="post">
+                    <fieldset>
+                        <legend>Contact information</legend>
+                        <div class="field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message details</legend>
+                        <div class="field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit">Send Message</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2026 Rishabh Negi. All rights reserved.</p>
+            <p><a href="projects.html">Projects</a> | <a href="internships.html">Internships</a> | <a href="Contacts.html">Contact</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rishabh Negi, first year BTech CSE student at South Asian University. Creator of IntellectDeck, a free academic platform for BTech students.">
+    <title>My Portfolio - Home</title>
+    <link rel="icon" href="images/avatar.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <div class="wrap topbar-inner">
+            <a class="brand" href="index.html"><img src="images/avatar.jpg" width="40" height="40" alt="">Rishabh Negi</a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="internships.html">Internships</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="wrap">
+                <div class="hero-grid">
+                    <div>
+                        <h1>Rishabh Negi</h1>
+                        <p class="lead">Hi everyone! I'm Rishabh Negi, a first year BTech CSE student at South Asian University.</p>
+                        <div class="btn-row">
+                            <a class="btn" href="projects.html">See my projects</a>
+                            <a class="btn btn-ghost" href="Contacts.html">Get in touch</a>
+                        </div>
+                    </div>
+                    <figure class="window">
+                        <img src="images/plane.jpg" width="1100" height="1466" alt="An airliner on approach against a cobalt and yellow dusk sky, photographed by Rishabh">
+                    </figure>
+                </div>
+
+                <div class="route" aria-hidden="true">
+                    <svg viewBox="0 0 720 112" role="presentation">
+                        <path class="route-line" d="M8 104 C 190 2, 470 2, 712 76"/>
+                        <path class="route-draw" id="route-path" pathLength="1" d="M8 104 C 190 2, 470 2, 712 76"/>
+                        <circle class="route-dot" cx="8" cy="104" r="6"/>
+                        <circle class="route-dot route-dot-end" cx="712" cy="76" r="6"/>
+                        <g id="flyer">
+                            <g class="route-plane" transform="rotate(90) scale(.2) translate(-100,-110)">
+                                <path d="M100 6c8 0 12 14 12 34v130c0 20-6 36-12 44-6-8-12-24-12-44V40c0-20 4-34 12-34Z"/>
+                                <path d="M88 80 8 140v12l80-26h24l80 26v-12l-80-60Z"/>
+                                <path d="M88 176 52 202v8l36-12h24l36 12v-8l-36-26Z"/>
+                            </g>
+                            <animateMotion id="flyer-motion" dur="3s" begin="0s" fill="freeze" rotate="auto" calcMode="linear">
+                                <mpath href="#route-path"/>
+                            </animateMotion>
+                        </g>
+                    </svg>
+                    <div class="route-labels">
+                        <span>Delhi <span class="route-clock" id="delhi-clock"></span></span>
+                        <span>Aerospace and defence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="wrap">
+            <section class="section">
+                <div class="section-grid">
+                    <h2>Welcome to my portfolio</h2>
+                    <div>
+                        <p>I'm 19 years old. I'm highly interested in science and technology, especially physics.</p>
+                        <p>I want to build a career around technology and I'm currently working towards it.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feature" aria-labelledby="intellectdeck-title">
+                <div class="feature-text">
+                    <h2 id="intellectdeck-title">IntellectDeck</h2>
+                    <p>I built a website called IntellectDeck, a free academic platform for BTech students.</p>
+                    <ul class="tags">
+                        <li>Free</li>
+                        <li>Academic platform</li>
+                        <li>For BTech students</li>
+                    </ul>
+                    <p><a href="projects.html#intellectdeck">Read more on my projects page</a></p>
+                </div>
+                <img class="feature-art" src="images/deck.svg" alt="" width="260" height="220">
+            </section>
+
+            <section class="section">
+                <div class="spot">
+                    <figure>
+                        <img src="images/plane.jpg" width="1100" height="1466" loading="lazy" alt="Silhouette of an airliner coming in to land above a street lamp and a footbridge at dusk">
+                        <figcaption>An airliner on approach. Shot on my phone.</figcaption>
+                    </figure>
+                    <div>
+                        <h2>Plane spotting</h2>
+                        <p>
+                            Aerospace is my greatest interest: aircraft design, missile
+                            technology, space technology, and watching planes come in to land.
+                        </p>
+                        <p><a href="about.html#interests">More about my interests</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2026 Rishabh Negi. All rights reserved.</p>
+            <p><a href="projects.html">Projects</a> | <a href="internships.html">Internships</a> | <a href="Contacts.html">Contact</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
