@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rishabh Negi, first year BTech CSE student at South Asian University. Creator of IntellectDeck, a free academic platform for BTech students.">
+    <title>My Portfolio - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <div class="wrap topbar-inner">
+            <a class="brand" href="index.html">Rishabh Negi</a>
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="Contacts.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="wrap">
+                <div class="hero-grid">
+                    <div>
+                        <h1>Rishabh Negi</h1>
+                        <p class="lead">Hi everyone! I'm Rishabh Negi, a first year BTech CSE student at South Asian University.</p>
+                    </div>
+                    <img class="portrait" src="profile.jpg" width="640" height="640" alt="Portrait of Rishabh Negi">
+                </div>
+
+                <div class="route" aria-hidden="true">
+                    <svg viewBox="0 0 720 112" role="presentation">
+                        <path class="route-line" d="M8 104 C 190 2, 470 2, 712 76"/>
+                        <path class="route-draw" pathLength="1" d="M8 104 C 190 2, 470 2, 712 76"/>
+                        <circle class="route-dot" cx="8" cy="104" r="6"/>
+                        <circle class="route-dot" cx="712" cy="76" r="6"/>
+                    </svg>
+                    <div class="route-labels">
+                        <span>Delhi <span class="route-clock" id="delhi-clock"></span></span>
+                        <span>Aerospace and defence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="wrap">
+            <section class="feature" aria-labelledby="intellectdeck-title">
+                <h2 id="intellectdeck-title">IntellectDeck</h2>
+                <p>I built a website called IntellectDeck, a free academic platform for BTech students.</p>
+                <ul class="tags">
+                    <li>Free</li>
+                    <li>Academic platform</li>
+                    <li>For BTech students</li>
+                </ul>
+                <p><a href="projects.html#intellectdeck">Read more on my projects page</a></p>
+            </section>
+
+            <section class="section">
+                <div class="section-grid">
+                    <h2>Welcome to my portfolio</h2>
+                    <div>
+                        <p>I'm 19 years old. I'm highly interested in science and technology, especially physics.</p>
+                        <p>I want to build a career around technology and I'm currently working towards it.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2026 Rishabh Negi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
